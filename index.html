@@ -565,7 +565,7 @@
 
         function confirmFinalPurchase() {
             const s = getOrderSummary();
-            const orderId = 'LH-' + Math.floor(Math.random() * 1000000);
+            const orderId = 'SLH-' + Math.floor(Math.random() * 1000000);
             const date = new Date();
             lastOrderData = { id: orderId, date: date.toLocaleString(), timestamp: date.getTime(), items: s.text, total: s.total };
             saveOrderToHistory(lastOrderData);
